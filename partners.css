@@ -1,0 +1,79 @@
+#mainContainer {
+	border: 1px solid #AAAAAA;
+	position: absolute;
+	width: 750px;
+	height: 150px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.ctrlBtn {
+	font-weight: bold;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 38px;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	padding: 50px 2px 70px 2px;
+	top: 0px;
+	z-index: 9999;
+	background: #DDD;
+	color: #FFF;
+	cursor: pointer;
+}
+
+#left.ctrlBtn {
+	left: 0px;
+}
+
+#right.ctrlBtn {
+	right: 0px;
+}
+
+
+.imgContainer {
+	position: absolute;
+	height: 130px;
+	margin: 10px 0px;
+	padding: 0px;
+	/*overflow: hidden;*/
+}
+
+.image {
+	border: 1px solid #CCCCCC;
+	display: inline-block;
+	height: 128px;
+	padding: 0px 10px;
+	margin: 0px 4px;
+	white-space: normal;
+	background: #EFEFEF;
+}
+
+
+.image:hover {
+	-webkit-box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    3px 3px 2px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         3px 3px 2px 0px rgba(50, 50, 50, 0.75);
+}
+
+
+.image img {
+	width: auto;
+	max-height: 96px;
+	height: auto;
+	margin: 0px auto;
+	display: block;
+}
+
+.name {
+	white-space: normal;
+	display: block;
+	width: 100px;
+	overflow: hidden;
+	height: 30px;
+	text-align: center;
+	font-size: 0.7em;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 1px;
+	padding: 0px;
+}
