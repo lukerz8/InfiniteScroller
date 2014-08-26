@@ -1,6 +1,6 @@
-var imgWidth; 				// Width of an image. calculated automatically
-var imgPad = 30;			// size in px of the margin/padding/border of an image
-var spd = 600; 				// The speed of the scrolling animation
+var imgWidth; 			// Width of an image. calculated automatically
+var imgPad = 30;		// size in px of the margin/padding/border of an image
+var spd = 600; 			// The speed of the scrolling animation
 var autoSlide = null; 		// setInterval variable used by clearInterval.
 var changeInterval = 2000;	// How often the slide changes
 
@@ -39,7 +39,6 @@ function scroll(speed, easing, direction) {
 	else { dir = -imgWidth; }
 	
 	//scrollCloner(direction);
-	
 	$(".imgContainer").animate({
 		left: dir
 	}, speed, easing, function() {
@@ -53,14 +52,14 @@ function scroll(speed, easing, direction) {
 // 0 is left image to right, 1 is right image to left
 function scrollCloner(direction) {
 	if (direction == 1) { 
-		$(".imgContainer div:last-child")	.clone()
-											.css("opacity", "0")
-											//.css("width", "0")
-											.prependTo(".imgContainer")
-											.fadeTo(300, 1);
-											//.animate({
-											//	width: imgWidth
-											//}, 300);
+		$(".imgContainer div:last-child").clone()
+										.css("opacity", "0")
+										//.css("width", "0")
+										.prependTo(".imgContainer")
+										.fadeTo(300, 1);
+										//.animate({
+										//	width: imgWidth
+										//}, 300);
 		$(".imgContainer div:last-child").remove();
 		$(".imgContainer").css("left", "0");
 	} else {
@@ -87,9 +86,7 @@ function rightScroll() {
 function leftScroll() {
 	stopScroll();
 	scroll(spd, "easeInOutExpo", 1);
-
 }
-
 
 // Show the navigation button
 function showBtn() {
